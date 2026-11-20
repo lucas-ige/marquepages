@@ -1,0 +1,23 @@
+# Python bookmarks for "marquepages", a web interface to show & use bookmarks.
+#
+# Copyright (c) 2026 Institut des Géosciences de l'Environnement, Grenoble.
+#
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the GNU Affero General Public License as published by the Free
+# Software Foundation, version 3.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+# details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Python: https://www.python.org/ #python
+PyPI: https://pypi.org/ #python
+Python PEPs: https://peps.python.org/ #python
+Python documentation: https://docs.python.org/3/ #python
+    Python standard library: library/index.html #python
+Mamba (Python): https://mamba.readthedocs.io/en/latest/index.html #python
+Ruff (Python): https://docs.astral.sh/ruff/ #python
