@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Main page of "marquepages", a web interface to show and use bookmarks.
+
+       Copyright (c) 2026 Institut des Géosciences de l'Environnement, Grenoble.
+
+       This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero
+       General Public License as published by the Free Software Foundation, version 3.
+
+       This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the
+       implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public
+       License for more details.
+
+       You should have received a copy of the GNU Affero General Public License along with this program. If not, see
+       <https://www.gnu.org/licenses/>.
+
+       -->
+
+  <head>
+    <title>Marque-pages</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Easy bookmarks"/>
+    <meta name="keywords" content="bookmarks"/>
+    <meta name="author" content="Lucas Bastien"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="marquepages.css"/>
+  </head>
+
+  <body>
+
+    <header>
+      Marque-pages
+    </header>
+
+    <div id="results-of-bookmark-search"></div>
+
+    <div id="search-window-background"></div>
+
+    <div id="search-window">
+      <form id="search-window-form">
+        <label id="search-window-title" for="search-window-user-input">Search by URL</label>
+        <input id="search-window-user-input" type="text">
+      </form>
+
+    <script src="./bookmarks.js"></script>
+    <script src="./marquepages.js"></script>
+
+  </body>
+
+</html>

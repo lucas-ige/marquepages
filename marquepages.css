@@ -1,0 +1,166 @@
+/* Main CSS of "marquepages", a web interface to show and use bookmarks.
+
+Copyright (c) 2026 Institut des Géosciences de l'Environnement, Grenoble.
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, version 3.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along
+with this program. If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
+/*--------------*/
+/* Color scheme */
+/*--------------*/
+
+:root {
+    --color-fg: white;
+    --color-fg-retro: black;
+    --color-fg-hard: deepskyblue;
+    --color-bg: black;
+    --color-bg-retro: lightblue;
+}
+
+/*-------------------*/
+/* Overal formatting */
+/*-------------------*/
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+}
+
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 200%;
+    color: var(--color-fg-hard);
+}
+
+/*-----------------------------*/
+/* Formatting of the bookmarks */
+/*-----------------------------*/
+
+#results-of-bookmark-search ul, #results-of-bookmark-search li {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results-of-bookmark-search {
+    width: min(80%, 800px);
+    margin: auto;
+    text-align: center;
+}
+
+#results-of-bookmark-search a {
+    display: inline-block;
+    height: 20px;
+    width: min(80%, 300px);
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-right: 4px;
+    margin-left: 4px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid var(--color-fg-hard);
+    font-size: 120%;
+    color: var(--color-fg);
+    text-decoration-line: none;
+}
+
+#results-of-bookmark-search a:link {
+    color: var(--color-fg);
+    text-decoration-line: none;
+}
+
+#results-of-bookmark-search a:visited {
+    color: var(--color-fg);
+    text-decoration-line: none;
+}
+
+#results-of-bookmark-search a:active {
+    color: var(--color-fg);
+    text-decoration-line: none;
+}
+
+#results-of-bookmark-search a:hover {
+    background-color: var(--color-bg-retro);
+    color: var(--color-fg-retro);
+    text-decoration-line: none;
+}
+
+/*---------------------------------*/
+/* Formatting of the search window */
+/*---------------------------------*/
+
+#search-window-background {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg);
+    opacity: 0.6;
+}
+
+#search-window {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-window-form {
+    display: flex;
+    height: 200px;
+    width: min(60%, 600px);;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid  var(--color-fg-hard);
+}
+
+#search-window-form > input:focus {
+    outline: none;
+}
+
+#search-window-title {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+    font-size: 200%;
+    color: var(--color-fg-hard);
+}
+
+#search-window-user-input {
+    width: min(50%, 500px);
+    height: 40px;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid var(--color-fg-hard);
+    border-radius: 10px;
+    font-size: 150%;
+    background-color: var(--color-bg-retro);
+    color: var(--color-fg-retro);
+}
